@@ -47,6 +47,42 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+/* Asegura que el contenedor ocupe toda la pantalla */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea el contenido al final de la página */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor en la parte inferior */
+.bottom-text {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio desde el borde inferior de la pantalla */
+}
+
+/* Estilos para el título */
+.bottom-text h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la lista */
+.name-list {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.name-list li {
+    padding: 5px 0;
+}
+
 /* Cambia el color del texto a blanco y evita que cambie en hover */
 .section-link .section:hover {
     color: white;  /* Asegura que el texto siempre sea blanco */
