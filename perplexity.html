@@ -5,27 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perplexity</title>
     <style>
-        /* Estilos generales */
         body {
             display: flex;
             flex-direction: column;
             align-items: center;
             font-family: Arial, sans-serif;
-            background-color: #000; /* Fondo negro */
+            background-color: #000; 
             color: #fff;
             margin: 0;
             padding: 20px;
         }
         
-        /* Título Perplexity */
         h1 {
             font-size: 3rem;
-            color: #fff; /* Color blanco para el título */
+            color: #fff;
             opacity: 0;
             animation: slideDown 1.5s ease forwards;
         }
 
-        /* Botón "Inicio" */
+        
         .inicio-btn {
             position: fixed;
             top: 20px;
@@ -33,7 +31,7 @@
             padding: 10px 20px;
             font-size: 1rem;
             color: #fff;
-            background-color: #808080; /* Color gris */
+            background-color: #808080; 
             border: none;
             border-radius: 25px;
             cursor: pointer;
@@ -47,12 +45,11 @@
             background-color: #666666;
         }
 
-        /* Contenedor de descripción */
         .description-container {
-            border: 2px solid #808080; /* Borde gris */
+            border: 2px solid #808080; 
             border-radius: 25px;
             padding: 20px;
-            background-color: rgba(128, 128, 128, 0.2); /* Fondo gris transparente */
+            background-color: rgba(128, 128, 128, 0.2); 
             width: 80%;
             max-width: 600px;
             margin: 20px 0;
@@ -67,7 +64,6 @@
             color: #ddd;
         }
 
-        /* Contenedor de imágenes */
         .image-container {
             display: flex;
             justify-content: space-around;
@@ -78,7 +74,7 @@
             animation: fadeIn 1.5s ease forwards 3s;
         }
 
-        /* Estilos de las imágenes */
+        
         .image-container img {
             width: 48%;
             border-radius: 15px;
@@ -90,13 +86,13 @@
             transform: scale(1.05);
         }
 
-        /* Botón "Perplexity" */
+        
         .perplexity-btn {
             margin-top: 20px;
             padding: 10px 20px;
             font-size: 1.2rem;
             color: #000;
-            background-color: #fff; /* Fondo blanco */
+            background-color: #fff; 
             border: none;
             border-radius: 25px;
             cursor: pointer;
@@ -110,7 +106,7 @@
             background-color: #e0e0e0;
         }
 
-        /* Animación de aparición */
+       
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -122,7 +118,7 @@
             }
         }
 
-        /* Animación de deslizamiento del título */
+        
         @keyframes slideDown {
             from {
                 opacity: 0;
@@ -136,13 +132,10 @@
     </style>
 </head>
 <body>
-    <!-- Título -->
     <h1>Perplexity</h1>
 
-    <!-- Botón "Inicio" -->
     <a href="index.html" class="inicio-btn">Inicio</a>
 
-    <!-- Descripción -->
     <div class="description-container">
         <p class="description">
             Perplexity IA es una avanzada inteligencia artificial que redefine cómo accedemos y procesamos información. 
@@ -157,13 +150,11 @@
         </p>
     </div>
 
-    <!-- Imágenes -->
     <div class="image-container">
         <img src="perplexity 1.jpeg" alt="Descripción de la primera imagen">
         <img src="perplexity 2.png" alt="Descripción de la segunda imagen">
     </div>
 
-    <!-- Botón "Perplexity" debajo de las imágenes -->
     <a href="https://www.perplexity.ai/" class="perplexity-btn" target="_blank">Perplexity</a>
 </body>
 </html>
