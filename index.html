@@ -3,32 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inteligencia Artificial</title>
-    <link rel="stylesheet" href="complementos.css">
+    <title>Inteligencia Artificiales</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+            text-align: center;
+            margin: 0;
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fadeInSlide 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeInSlide {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInContent 1s ease-out 2s forwards;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            background-color: #d3d3d3;
+            color: #000;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #bbb;
+            transform: scale(1.1);
+        }
+
+        .description {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 250px;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: fadeInContent 1s ease-out 2.5s forwards;
+        }
+
+        .description ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .description li {
+            margin-bottom: 5px;
+            opacity: 0;
+            transform: translateX(-10px);
+            animation: fadeInListItem 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeInListItem {
+            from { opacity: 0; transform: translateX(-10px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .additional-description {
+            position: absolute;
+            bottom: 140px;
+            right: 20px;
+            max-width: 200px;
+            opacity: 0;
+            transform: translateX(20px);
+            animation: fadeInContent 1s ease-out 3.5s forwards;
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        .image-container {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            opacity: 0;
+            transform: translateX(20px);
+            animation: fadeInContent 1s ease-out 4s forwards;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        @keyframes fadeInContent {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="title" id="title">Inteligencia Artificial</h1>
-        <div class="sections">
-            <a href="suno.html" class="section-link">
-                <div class="section" id="suno">SUNO</div>
-            </a>
-            <a href="perplexity.html" class="section-link">
-                <div class="section" id="perplexity">PERPLEXITY</div>
-            </a>
-            <a href="rask.html" class="section-link">
-                <div class="section" id="rask">RASK</div>
-            </a>
-        </div>
-    <div class="bottom-text">
-        <h1>Esta pagina fue echa por alumnos de la carrera de desarrollo de software de 2do año</h1>
-        <ul class="name-list">
-            <li>Fernandez Rodrigo</li>
-            <li>Flores Martin</li>
-            <li>Rios Lautaro</li>
-            <li>Vargas Santiago</li>
+
+    <h1>Inteligencias Artificiales</h1>
+
+    <div class="buttons">
+        <button class="button" onclick="location.href='suno.html'">Suno</button>
+        <button class="button" onclick="location.href='perplexity.html'">Perplexity</button>
+        <button class="button" onclick="location.href='rask.html'">Rask</button>
+    </div>
+
+    <div class="description">
+        <p>Creadores del sitio web:</p>
+        <ul>
+            <li style="animation-delay: 2.6s">Fernandez Rodrigo</li>
+            <li style="animation-delay: 2.8s">Flores Martin</li>
+            <li style="animation-delay: 3s">Rios Lautaro</li>
+            <li style="animation-delay: 3.2s">Santiago Vargas</li>
         </ul>
     </div>
-    <script src="animaciones.js"></script>
+
+    <div class="additional-description">
+        <p>Esta pagina fue diseñada con el fin de mostrar diferentes inteligencias artificiales que nos podrian ayudar en el ambito estudiantil.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="softlogo.jpg" alt="Imagen de ejemplo">
+    </div>
+
 </body>
 </html>
